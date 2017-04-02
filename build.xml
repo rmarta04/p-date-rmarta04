@@ -18,7 +18,7 @@
     </target>
 
     <target name="run" depends="compile">
-      <java classname="es.unileon.prg.tema7">
+      <java classname="es.unileon.prg.tema7.MainDate">
          <classpath>
               <pathelement path="${classes}"/>
          </classpath>

@@ -1,5 +1,10 @@
-package es.unileon.prg.tema7;
+/*package es.unileon.prg.tema7;
 
 public class DateException extends Exception {
-	super(message);
+	
+	public DateException(String message){
+		super(message);
+	}
+
 }
+*/
