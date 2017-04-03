@@ -1,0 +1,46 @@
+﻿Practica P-DATE
+
+Alumno: Rubén Martínez Alconero
+
+Horas dedicadas: 23
+
+Problemas surgidos al realizar la practica:
+	-Al intentar comprobar los resultados del trabajo,no da errores de compilación pero a la hora de ejecutar da ciertos problemas:
+	run:
+     [java] java.lang.IllegalAccessException: Class org.apache.tools.ant.taskdefs.ExecuteJava can not access a member of class es.unileon.prg.tema7.MainDate with modifiers "public static"
+     [java]     at org.apache.tools.ant.taskdefs.ExecuteJava.execute(ExecuteJava.java:198)
+     [java]     at org.apache.tools.ant.taskdefs.Java.run(Java.java:834)
+     [java]     at org.apache.tools.ant.taskdefs.Java.executeJava(Java.java:228)
+     [java]     at org.apache.tools.ant.taskdefs.Java.executeJava(Java.java:137)
+     [java]     at org.apache.tools.ant.taskdefs.Java.execute(Java.java:110)
+     [java]     at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:293)
+     [java]     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     [java]     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+     [java]     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [java]     at java.lang.reflect.Method.invoke(Method.java:498)
+     [java]     at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [java]     at org.apache.tools.ant.Task.perform(Task.java:348)
+     [java]     at org.apache.tools.ant.Target.execute(Target.java:435)
+     [java]     at org.apache.tools.ant.Target.performTasks(Target.java:456)
+     [java]     at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1405)
+     [java]     at org.apache.tools.ant.Project.executeTarget(Project.java:1376)
+     [java]     at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [java]     at org.apache.tools.ant.Project.executeTargets(Project.java:1260)
+     [java]     at org.apache.tools.ant.Main.runBuild(Main.java:857)
+     [java]     at org.apache.tools.ant.Main.startAnt(Main.java:236)
+     [java]     at org.apache.tools.ant.launch.Launcher.run(Launcher.java:287)
+     [java]     at org.apache.tools.ant.launch.Launcher.main(Launcher.java:113)
+     [java] Caused by: java.lang.IllegalAccessException: Class org.apache.tools.ant.taskdefs.ExecuteJava can not access a member of class es.unileon.prg.tema7.MainDate with modifiers "public static"
+     [java]     at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+     [java]     at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+     [java]     at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+     [java]     at java.lang.reflect.Method.invoke(Method.java:491)
+     [java]     at org.apache.tools.ant.taskdefs.ExecuteJava.run(ExecuteJava.java:221)
+     [java]     at org.apache.tools.ant.taskdefs.ExecuteJava.execute(ExecuteJava.java:154)
+     [java]     ... 21 more
+     [java] Java Result: -1
+
+
+     -Errores con las excepciones que no se corregir
+
+     -Error en el return del método "printMonthsSameAmountDays()"
